@@ -8,5 +8,6 @@
     ],
     "editor.formatOnSave": true,
     "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
-    "terminal.integrated.fontSize": 12
+    "terminal.integrated.fontSize": 12,
+    "editor.fontFamily": "Ubuntu Monospace, Consolas, 'Courier New', monospace"
 }
