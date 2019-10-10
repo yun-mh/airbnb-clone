@@ -1,13 +1,12 @@
 {
-    "python.pythonPath": "/home/canivas/.local/share/virtualenvs/airbnb-clone-UMgxP7K0/bin/python",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "python.linting.flake8Args": [
-        "--max-line-length=88"
-    ],
-    "editor.formatOnSave": true,
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
-    "terminal.integrated.fontSize": 12,
-    "editor.fontFamily": "Ubuntu Monospace, Consolas, 'Courier New', monospace"
+  "python.pythonPath": "/home/canivas/.local/share/virtualenvs/airbnb-clone-UMgxP7K0/bin/python",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=88"],
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "Menlo for Powerline, monospace, PowerlineSymbols",
+  "terminal.integrated.fontSize": 12,
+  "editor.fontFamily": "'Menlo for Powerline', Ubuntu Monospace, Consolas, 'Courier New', monospace",
+  "python.formatting.provider": "black"
 }
