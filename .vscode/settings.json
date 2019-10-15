@@ -3,10 +3,12 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "python.linting.flake8Args": ["--max-line-length=88"],
+  "python.linting.flake8Args": [
+    "--max-line-length=88"
+  ],
   "editor.formatOnSave": true,
   "terminal.integrated.fontFamily": "Menlo for Powerline, monospace, PowerlineSymbols",
   "terminal.integrated.fontSize": 12,
-  "editor.fontFamily": "'Menlo for Powerline', Ubuntu Monospace, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'DejaVu Sans Mono', Ubuntu Monospace, Consolas, 'Courier New', monospace",
   "python.formatting.provider": "black"
 }
