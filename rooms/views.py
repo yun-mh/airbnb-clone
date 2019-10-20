@@ -24,11 +24,15 @@ class RoomDetail(DetailView):
 
 
 class SearchView(View):
+
+    """ SearchView Definition """
+
     def get(self, request):
         country = request.GET.get("country")
 
         if country:
             form = forms.SearchForm(request.GET)
+
             if form.is_valid():
                 city = form.cleaned_data.get("city")
                 country = form.cleaned_data.get("country")
@@ -45,7 +49,7 @@ class SearchView(View):
 
                 filter_args = {}
 
-                if city != "anywhere":
+                if city != "Anywhere":
                     filter_args["city__startswith"] = city
 
                 filter_args["country"] = country
@@ -81,8 +85,6 @@ class SearchView(View):
                     filter_args["facilities"] = facility
 
                 qs = models.Room.objects.filter(**filter_args).order_by("-created")
-
-                print(qs)
 
                 paginator = Paginator(qs, 10, orphans=5)
 
