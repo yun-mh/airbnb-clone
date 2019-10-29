@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "/home/canivas/.local/share/virtualenvs/airbnb-clone-UMgxP7K0/bin/python",
+  "python.pythonPath": "/Users/yun-mh/.local/share/virtualenvs/airbnb-clone-VEvKvFOo/bin/python",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
@@ -7,8 +7,6 @@
     "--max-line-length=88"
   ],
   "editor.formatOnSave": true,
-  "terminal.integrated.fontFamily": "Menlo for Powerline, monospace, PowerlineSymbols",
   "terminal.integrated.fontSize": 12,
-  "editor.fontFamily": "'DejaVu Sans Mono', Ubuntu Monospace, Consolas, 'Courier New', monospace",
   "python.formatting.provider": "black"
 }
