@@ -121,4 +121,7 @@ dmypy.json
 # static_files
 uploads/
 
+# Environments
+.env
+
 # End of https://www.gitignore.io/api/django
