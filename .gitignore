@@ -124,4 +124,8 @@ uploads/
 # Environments
 .env
 
+# nodejs
+node_modules
+
 # End of https://www.gitignore.io/api/django
+
