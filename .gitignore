@@ -127,5 +127,8 @@ uploads/
 # nodejs
 node_modules
 
+# mac
+.DS_Store
+
 # End of https://www.gitignore.io/api/django
 
