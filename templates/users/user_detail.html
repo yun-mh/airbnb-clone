@@ -6,7 +6,7 @@
 
 {% block content %}
 
-    <div class="h-75vh">
+    <div class="min-h-3/4">
         <div class="container lg:w-5/12 md:w-1/2 xl:w-1/4 mx-auto my-10 flex flex-col items-center border p-6 border-gray-400">
         
             {% include 'mixins/user_avatar.html' with user=user_obj %}
@@ -21,11 +21,10 @@
             <span class="text-lg mb-5">{{ user_obj.bio }}</span>
         
             {% if user == user_obj %}
-                <a href="#" class="btn-link">Edit Profile</a>    
+                <a href="{% url 'users:update' %}" class="btn-link">Edit Profile</a>    
             {% endif %}
 
         </div>
-
         
         {% if user_obj.rooms.count > 0 %}
             <div class="container flex flex-col items-center mx-auto pb-10">
