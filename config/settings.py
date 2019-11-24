@@ -1,3 +1,5 @@
+from django.middleware import locale
+
 """
 Django settings for config project.
 
@@ -56,6 +58,7 @@ INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -149,3 +152,8 @@ EMAIL_USE_TLS = True
 # Auth
 
 LOGIN_URL = "/users/login"
+
+
+# Locale
+
+LOCALE_PATHS = [os.path.join(BASE_DIR, "locale")]
