@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-24 21:37+0900\n"
+"POT-Creation-Date: 2019-11-29 22:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,46 @@ msgstr "이 웹페이지는 연습용으로 제작되었습니다."
 msgid "All rights reserved."
 msgstr "모든 저작권은 제작자에게 있습니다."
 
+#: templates/partials/nav.html:8
+msgid "Stop hosting"
+msgstr "게스트 모드"
+
+#: templates/partials/nav.html:10
+msgid "Start hosting"
+msgstr "호스팅 모드"
+
+#: templates/partials/nav.html:15
+msgid "Create Room"
+msgstr "숙소 등록하기"
+
+#: templates/partials/nav.html:17
+msgid "Favs"
+msgstr "저장 목록"
+
+#: templates/partials/nav.html:18
+msgid "Profile"
+msgstr "프로필"
+
+#: templates/partials/nav.html:19
+msgid "Logout"
+msgstr "로그아웃"
+
+#: templates/partials/nav.html:21
+msgid "Login"
+msgstr "로그인"
+
+#: templates/partials/nav.html:22
+msgid "Sign up"
+msgstr "회원 가입"
+
+#: templates/rooms/room_detail.html:34
+msgid "Remove from Favorites"
+msgstr "목록에서 제거"
+
+#: templates/rooms/room_detail.html:36
+msgid "Save to Favorites"
+msgstr "목록에 저장"
+
 #: templates/rooms/room_list.html:28
 #, python-format
 msgid "Page %(current_page)s of %(total_pages)s"
@@ -37,7 +77,7 @@ msgstr "전체 %(total_pages)s 페이지 중 %(current_page)s 페이지"
 
 #: users/mixins.py:13
 msgid "Cannot access there!"
-msgstr "액세스 권한이 없습니다!"
+msgstr "액세스 권한이 없어요!"
 
 #: users/models.py:21
 msgid "Male"
