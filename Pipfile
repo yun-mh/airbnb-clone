@@ -7,6 +7,8 @@ verify_ssl = true
 flake8 = "*"
 black = "*"
 pathspec = "*"
+pipenv-to-requirements = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 django = "==2.2.5"
@@ -15,6 +17,7 @@ django-countries = "*"
 django-seed = "*"
 django-dotenv = "*"
 requests = "*"
+pipenv-to-requirements = "*"
 
 [requires]
 python_version = "3.7"
