@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     ".elasticbeanstalk.com",
-    "airbnb-clone.zwpshvjfkp.ap-northeast-1.elasticbeanstalk.com",
+    "localhost",
 ]
 
 
