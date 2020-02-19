@@ -1,15 +1,4 @@
-################################################################################
-# This requirements file has been automatically generated from `Pipfile` with
-# `pipenv-to-requirements`
-#
-#
-# This has been done to maintain backward compatibility with tools and services
-# that do not support `Pipfile` yet.
-#
-# Do NOT edit it directly, use `pipenv install [-d]` to modify `Pipfile` and
-# `Pipfile.lock` and then regenerate `requirements*.txt`.
-################################################################################
-
+-i https://pypi.org/simple/
 appdirs==1.4.3
 certifi==2019.11.28
 chardet==3.0.4
@@ -17,7 +6,7 @@ distlib==0.3.0
 django-countries==5.5
 django-dotenv==1.4.2
 django-seed==0.2.2
-django==2.2.5
+django==2.2.10
 faker==4.0.1
 filelock==3.0.12
 idna==2.8

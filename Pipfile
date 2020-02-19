@@ -11,7 +11,7 @@ pipenv-to-requirements = "*"
 v = {editable = true,version = "*"}
 
 [packages]
-django = "==2.2.5"
+django = "==2.2.10"
 pillow = "*"
 django-countries = "*"
 django-seed = "*"
