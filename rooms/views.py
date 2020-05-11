@@ -5,11 +5,10 @@ from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-from django_countries import countries
 from users import mixins as user_mixins
 from . import models, forms
 
-# Create your views here.
+
 class HomeView(ListView):
 
     """ HomeView Definition """
@@ -33,12 +32,15 @@ class SearchView(View):
     """ SearchView Definition """
 
     def get(self, request):
+
         country = request.GET.get("country")
 
         if country:
+
             form = forms.SearchForm(request.GET)
 
             if form.is_valid():
+
                 city = form.cleaned_data.get("city")
                 country = form.cleaned_data.get("country")
                 room_type = form.cleaned_data.get("room_type")
@@ -60,7 +62,7 @@ class SearchView(View):
                 filter_args["country"] = country
 
                 if room_type is not None:
-                    filter_args["room_type"] = room_type  # room_type == foreign key
+                    filter_args["room_type"] = room_type
 
                 if price is not None:
                     filter_args["price__lte"] = price
@@ -105,15 +107,6 @@ class SearchView(View):
             form = forms.SearchForm()
 
         return render(request, "rooms/search.html", {"form": form})
-
-
-# FBV of detail view
-# def room_detail(request, pk):
-#     try:
-#         room = models.Room.objects.get(pk=pk)
-#         return render(request, "rooms/detail.html", {"room": room})
-#     except models.Room.DoesNotExist:
-#         raise Http404()
 
 
 class EditRoomView(user_mixins.LoggedInOnlyView, UpdateView):
@@ -165,7 +158,7 @@ def delete_photo(request, room_pk, photo_pk):
     try:
         room = models.Room.objects.get(pk=room_pk)
         if room.host.pk != user.pk:
-            messages.error(request, "Cannot delete that photo.")
+            messages.error(request, "Cant delete that photo")
         else:
             models.Photo.objects.filter(pk=photo_pk).delete()
             messages.success(request, "Photo Deleted")
@@ -209,6 +202,5 @@ class CreateRoomView(user_mixins.LoggedInOnlyView, FormView):
         room.host = self.request.user
         room.save()
         form.save_m2m()
-        messages.success(self.request, "Room Created")
+        messages.success(self.request, "Room Uploaded")
         return redirect(reverse("rooms:detail", kwargs={"pk": room.pk}))
-
