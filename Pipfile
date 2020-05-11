@@ -5,9 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
-pathspec = "==0.5.9"
+black = "*"
+pathspec = "*"
 pipenv-to-requirements = "*"
-awsebcli = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 django = "==2.2.5"
@@ -16,9 +17,13 @@ django-countries = "*"
 django-seed = "*"
 django-dotenv = "*"
 requests = "*"
+pipenv-to-requirements = "*"
 sentry-sdk = "==0.14.1"
 django-storages = "*"
 boto3 = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
